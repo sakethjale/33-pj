@@ -27,12 +27,7 @@ function draw() {
   if(backGroundImg)
   background(backGroundImg)  
   Engine.update(engine);
-//   if(frameCount%1===0){
-//     balls.push(new Ball(random(width/1-1200,width/1+1200),10,10))
-//   }
-//   for (var j = 0; j < balls.length; j++) {
-//     balls[j].display();
-// }
+
 if(hour>=12)
 {
   textSize(30)
@@ -80,11 +75,11 @@ else
  
 }
 async function backGround(){
-  var respon=await fetch("http://worldtimeapi.org/api/timezone/asia/kolkata");
+  var respon=await fetch("https://worldtimeapi.org/api/timezone/asia/kolkata");
   var responJSON=await respon.json();
   var day=responJSON.datetime;
   
-  // write code slice the datetime
+  
   
   hour=day.slice(11,13)
   
