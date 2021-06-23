@@ -75,7 +75,7 @@ else
  
 }
 async function backGround(){
-  var respon=await fetch("https://worldtimeapi.org/api/timezone/asia/kolkata");
+  var respon=await fetch("http://worldtimeapi.org/api/timezone/asia/kolkata");
   var responJSON=await respon.json();
   var day=responJSON.datetime;
   
